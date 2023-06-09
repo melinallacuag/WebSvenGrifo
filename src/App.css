@@ -223,3 +223,85 @@ button:disabled {
   overflow-y: auto;
   max-height: 400px; 
 }
+/* Menu Vertical */
+
+.vertical-menu {
+  background-color: #f9f9f9;
+}
+
+.menu-item {
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu-item:hover {
+  background-color: #eaeaea;
+}
+
+.menu-item .MuiSvgIcon-root {
+  margin-right: 10px;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.menu-item-title {
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+}
+
+.submenu {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  list-style-type: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+  position: absolute;
+  width: 180px;
+  z-index: 1;
+}
+
+.submenu li {
+  padding: 10px;
+}
+
+.submenu li:hover {
+  background-color: #e0e0e0;
+}
+.container{
+  display: flex;
+}
+
+.cont-cc{
+  background: #31353d;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  color: #fff;
+  font-weight: 600;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  height: 30px;
+  font-size: 1rem;
+}

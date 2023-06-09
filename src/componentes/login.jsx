@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import logo from '../img/logo_app.png';
+import Sidenav from './navbar'
 import UniqueIdGenerator from './imei';
 import { TextField, Button } from '@mui/material';
-import Dashboard from './dashboard';
+import Home from '../pages/Home';
 
 const Login = () => {
     
@@ -71,7 +72,7 @@ const Login = () => {
     const passwordCharacterCount = password.length;
   
     if (authenticated) {
-      return <Dashboard />;
+      return <Home />;
     }
   
     return (
