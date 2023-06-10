@@ -1,6 +1,8 @@
 import styles from "./sidenav.module.css"
 import React, {useEffect, useState } from 'react';
 import { NavLink } from "react-router-dom";
+import logo from '../img/logo_app.png';
+import closedLogo from '../img/icon_app.png'
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 import { navData } from "../lib/navData";
@@ -12,6 +14,8 @@ export default function Sidenav() {
     const [authenticated, setauthenticated] = useState(null);
 
     const [open, setopen] = useState(true);
+
+    const logoClass = open ? styles.App_logo : styles.App_logo_closed;
 
     const toggleOpen = () => {
         setopen(!open)
@@ -51,12 +55,11 @@ export default function Sidenav() {
 
         <div className={open?styles.sidenav:styles.sidenavClosed}>
 
-            <button className={styles.menuBtn} onClick={toggleOpen}>
-
-                {open? <KeyboardDoubleArrowLeftIcon />: <KeyboardDoubleArrowRightIcon />}
-
-            </button>
-
+            <div className={styles.contenedor_logo}>
+            <img src={open ? logo : closedLogo} className={logoClass} alt="logo" />
+    
+            </div>
+                        
             { navData.map(item =>{
 
                 return  <NavLink key={item.id} className={styles.sideitem} to={item.link}> 
@@ -67,6 +70,12 @@ export default function Sidenav() {
 
                 })
             }
+
+            <button className={styles.menuBtn} onClick={toggleOpen}>
+
+            {open? <KeyboardDoubleArrowLeftIcon />: <KeyboardDoubleArrowRightIcon />}
+
+            </button>
 
             <button onClick={handleLogout}>Salir</button>
 

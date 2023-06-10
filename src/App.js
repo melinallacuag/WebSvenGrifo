@@ -4,6 +4,7 @@ import Login from './componentes/login';
 
 import Home from "./pages/Home";
 import React, { useState } from 'react';
+import Ventas from './pages/Ventas';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={ <Login /> } />
           <Route path="/home" element={ <Home /> } />
+          <Route path="/ventas" element={ <Ventas /> } />
         </Routes>
       </Router>
     

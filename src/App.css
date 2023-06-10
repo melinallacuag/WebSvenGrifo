@@ -292,16 +292,43 @@ button:disabled {
   display: flex;
 }
 
-.cont-cc{
-  background: #31353d;
+.contenedor_titulo{
+  background: rgb(10,25,41);
   border-radius: 10px;
-  margin-bottom: 1rem;
-  margin-top: 0;
   color: #fff;
   font-weight: 600;
-  width: 100%;
   padding: 10px;
   margin: 10px;
   height: 30px;
   font-size: 1rem;
+  align-items: center;
+  justify-content: left;
+  display: grid;
+}
+
+.container-datos {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.columnas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.columna {
+  width: calc(100% - 0.2rem);
+  margin-bottom: 0rem;
+}
+
+.container_lado{
+
+  padding: 10px;
+  font-size: 1rem;
+  align-items: center;
+  justify-content: left;
+  display: grid;
+
 }

@@ -15,8 +15,8 @@ export const navData = [
     {
         id: 1,
         icon: <TravelExploreIcon/>,
-        text: "Explore",
-        link: "explore"
+        text: "Ventas",
+        link: "/ventas"
     },
 
     {
