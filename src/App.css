@@ -64,7 +64,7 @@ input {
   border-radius: 4px;
 }
 
-button {
+/*button {
   width: 100%;
   padding: 10px;
   border: none;
@@ -76,7 +76,7 @@ button {
 
 button:hover {
   background-color: #0056b3;
-}
+}*/
 
 button:disabled {
   background-color: #ccc;
@@ -288,6 +288,7 @@ button:disabled {
 .submenu li:hover {
   background-color: #e0e0e0;
 }
+/* */
 .container{
   display: flex;
 }
@@ -332,3 +333,141 @@ button:disabled {
   display: grid;
 
 }
+/* */
+
+.carousel-container {
+  margin: 10px;
+  position: relative;
+
+}
+
+.carousel-arrow {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.carousel-arrow:disabled {
+  border-radius: 50%;
+  cursor: not-allowed;
+  background-color: #524c4ce2;  
+}
+
+.carousel-arrow-prev {
+  left: 0;
+}
+
+.carousel-arrow-next {
+  right: 0;
+}
+
+.carousel-arrow-custom {
+  background-color: #ffffff00;
+  border: 0.15rem solid #083c7c;
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.arrow-icon {
+  font-size: 18px;
+}
+
+.card-lados{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  margin: 0.5rem;
+  gap: 1rem;
+  border-radius: 1rem;
+  background: #8b8b8b;
+}
+
+.icon-fuel{
+ color: #fff;
+  font-size: 50px !important;
+}
+
+.title-lado{
+  color: #fff;
+  margin: 0;
+}
+.descripcion-manguera{
+  margin: 0;
+}
+
+.card-lados.selected {
+  /* Estilos para la card seleccionada */
+  background-color: #354dd7;
+  /* ... Otros estilos adicionales */
+}
+
+.card_heard{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+    margin-bottom: 0;
+    background-color: #f8f9fc;
+    border-bottom: 1px solid #e3e6f0;
+    border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.titulo_card{
+  color: #4e73df;
+  font-weight: 700;
+  margin: 0;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.container_formapago{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid #e3e6f0;
+  border-radius: 0.8rem;
+  margin: 1rem;
+}
+
+.card_body{
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+
+}
+
+.custom-tooltip{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #282a2c6c;
+  border-color: #ffffff;
+  border-radius: 0.5rem;
+  height: 1.5rem;
+  margin: 0;
+  padding: 0.4rem;
+}
+
+.label_card{
+  color: #fff;
+  font-size: 0.8rem;
+   font-weight: bold ;
+}
+
+
